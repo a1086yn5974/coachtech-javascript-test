@@ -5,6 +5,7 @@ const newarray = array.filter( function( value, index, array ) {
 })
 console.log(newarray);
 
+//うるう年の問題
 function LeapYear(year){
   if( (year % 4 === 0 && year % 100 !== 0) || year % 400 === 0) {
     return true;
@@ -12,7 +13,6 @@ function LeapYear(year){
   return false;
 }
 
-//うるう年の問題
 let checkYear2020 = 2020;
 if(LeapYear(checkYear2020)){
   console.log(checkYear2020 + '年はうるう年です。');
